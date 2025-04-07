@@ -1,0 +1,4 @@
+static_sites:
+  - name: bus-gps-tracker
+    buildCommand: npm install && npm run build
+    publishDir: build
