@@ -18,8 +18,7 @@ const MapTracker = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [lastUpdate, setLastUpdate] = useState(new Date());
 
-  const API_BASE_URL = 'https://gps-application-latest.onrender.com/api/gps';
-
+const API_BASE_URL = 'https://gps-application-latest.onrender.com/api/gps';
   const fetchLatestPosition = async () => {
     try {
       const response = await axios.get(`${API_BASE_URL}/latest`);
